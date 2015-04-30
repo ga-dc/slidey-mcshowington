@@ -4,17 +4,17 @@ var imageSpace = document.getElementById("background");
 var imageCollection = ["http://i.imgur.com/oq98hTA.jpg", "http://i.imgur.com/Sl8CPMP.jpg", "http://i.imgur.com/hG9Xb.jpg", "http://i.imgur.com/GYEse.jpg", "http://i.imgur.com/ndDhksZ.jpg"];
 // var random = Math.floor(Math.random() * 4);
 // console.log(random);
-i = 0;
+i = 1;
 
 function backgroundImage(){
 	imageAmount();
-	$("#background").css('background-image', 'url(' + imageCollection[i] + ')');
+	$("#background").css('background-image', 'url(' + imageCollection[i] + ')').fadeIn(3000).delay(4000).fadeOut(3000);
 	i++;
 }
 
 var imageMovement = setInterval(function () {
 		backgroundImage();
-	}, 1000);
+	}, 10000);
 
 function imageAmount(){
 	if(i >= imageCollection.length){
@@ -23,17 +23,18 @@ function imageAmount(){
 }
 
 function backgroundFadeIn(){
-	$("#background").fadeIn(4000);
+	$("#background").fadeIn(1000);
 }
 
 function backgroundFadeOut(){
-	$("#background").fadeOut(4000);
+	$("#background").fadeOut(1000);
 }
 
-function stopShow(){ setTimeout(function () {
-			clearInterval(imageMovement);
-	}, 1000);}
 
+// function stopShow(){ setTimeout(function () {
+// 			clearInterval(imageMovement);
+// 	}, 1000);}
+//
 // $(".stop").click(stopShow());
 
 // function backgroundImage(){
