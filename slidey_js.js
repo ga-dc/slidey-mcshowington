@@ -10,13 +10,20 @@ var images = [
 
 var imageNumber = 0
 
+var startSlides = function(){
+	$("#background").fadeOut(1500, function(){
+		$(this).css("background-image", "url()")
+		changeBackground()
+		});
+}
+
 var changeBackground = function(){
-	$("#background").css("background-image", "url(" + images[imageNumber] + ")");
+	$("#background").css("background-image", "url(" + images[imageNumber] + ")").fadeIn(1500);
 	imageNumber++;
 	if (imageNumber >= images.length){
 		imageNumber = 0;
 	}
 }
 // }
-setInterval(changeBackground, 5000);
+setInterval(startSlides, 2000);
 });
