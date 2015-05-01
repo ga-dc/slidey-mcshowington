@@ -24,6 +24,16 @@ var changeBackground = function(){
 		imageNumber = 0;
 	}
 }
-// }
-setInterval(startSlides, 2000);
+
+var slideShow = setInterval(startSlides, 2000);
+
+var pauseShow = function(){
+	clearInterval(slideShow)
+}
+
+$("#background").click(function(){
+	alert("this is where I need another function to restart...");
+	pauseShow();
+})
+
 });
