@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Slidey McShowington</title>
+    <link href="http://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet" type="text/css" />
+    <style>
+      *
+      {
+        margin:0;
+        padding:0;
+        border:0;
+        box-sizing:border-box;
+        font-family:"Josefin Sans", sans;
+      }
+      html, body, #background1, #background2 
+      {
+        position:absolute;
+        width:100%;
+        height:100%;
+        background-color:black;
+      }
+      #background1, #background2
+      {
+        background-repeat:no-repeat;
+        background-size:cover;
+        background-position:center center;
+      }
+      #background1{
+        opacity: 0;
+        z-index: 3;
+      }
+      #background2{
+        z-index: 2;
+      }
+      #inputs
+      {
+        position:absolute;
+        width:100%;
+        bottom:1em;
+        z-index: 4;
+      }
+      input, #stop
+      {
+        text-align:center;
+        padding:.5em;
+        border-radius:36px;
+        border-color:white;
+        border-width:2px;
+        border-style:solid;
+        background-color:transparent;
+        color:white;
+        opacity:0.1;
+        transition: background-color .1s, opacity .2s;
+      }
+      input{
+        display:block;
+        margin:0 auto;
+        font-size:36px;
+      }
+      input:hover,
+      input:focus, #stop:hover
+      {
+        outline:0;
+        background-color:rgba(255,255,255,0.3);
+        opacity:.7;
+      }
+      #stop{
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        z-index: 5;
+        font-size: 18px;
+      }
+      #timing
+      {
+        width:72px;
+      }
+    </style>
+    <script src="jquery.js"></script>
+    <script src="second_try.js"></script>
+  </head>
+  <body>
+    <div id='stop'>Stop!</div>
+    <div id="background1" style="background-image:url('');"></div>
+    <div id="background2" style="background-image:url('');"></div>
+
+    <div id="inputs">
+      <input type="text" id="word" value="nature" />
+    </div>
+
+  </body>
+</html>
