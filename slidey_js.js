@@ -13,7 +13,7 @@ $(document).ready(function () {
       currentImage = images[i];
       i ++;
     } else {
-      currentImage = images[0];
+      i = 0;
     }
 
 
