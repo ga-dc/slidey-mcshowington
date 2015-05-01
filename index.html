@@ -30,6 +30,8 @@
         position:absolute;
         width:100%;
         bottom:1em;
+        text-align: center;
+        color: #fff;
       }
       input
       {
@@ -64,10 +66,15 @@
   </head>
   <body>
 
-    <div id="background" style="background-image:url('');"></div>
+    <div id="background" style="background-image:url('http://i.imgur.com/0FCcuuK.jpg');"></div>
 
     <div id="inputs">
-      <input type="text" id="word" value="nature" />
+      <input type="text" id="word" value="dogs" />
+      <input type="number" id="interval" value="5">
+      <p>Slide</p>
+      <input type="radio" id="slide" name="animation" value="slide">
+      <p>Fade</p>
+      <input type="radio" id="fade" name="animation" value="fade" checked>
     </div>
 
   </body>
