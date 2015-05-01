@@ -35,19 +35,22 @@ $( document ).ready(function() {
 
   var startImageSwap = function(){
     enMarche = 1
-    changeBackground;
+    changeBackground();
+    console.log("bob")
     interval = setInterval(changeBackground, 1000);
   };
 
-  start.addEventListener("click", function(){
-  changeBackground;
+  startImageSwap();
+
+$(window).on("click", function(){
+  changeBackground();
   interval = setInterval(changeBackground, 1000);
   });
-
-  pause.addEventListener("click", function(){
-    clearInterval(interval);
-    enMarche = 0
-  })
+  //
+  // pause.addEventListener("click", function(){
+  //   clearInterval(interval);
+  //   enMarche = 0
+  // })
 
   //
 //
