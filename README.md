@@ -54,3 +54,13 @@ GIFs can be pretty memory-heavy and may not load right away. Try to set up the t
 ---
 
 ![Make it so!](http://i.imgur.com/sCOsXcx.png)
+
+http://i.imgur.com/wcbCIc3.jpg
+
+http://i.imgur.com/2tQTR7t.jpg
+
+http://i.imgur.com/u0tOBYz.jpg
+
+http://i.imgur.com/VATK187.jpg
+
+http://i.imgur.com/49S5LDE.webm
