@@ -2,9 +2,22 @@
 
 Life's easier when it takes place against a backdrop of soothing pictures.
 
+
+
+
+
 Create a webpage, the background of which is a slideshow that cycles through at least 5 different images. (I recommend using images hosted on Imgur.com.)
 
 Please touch only the `slidey_js.js` file.
+
+
+
+
+
+
+
+
+
 
 Once you've completed the assignment, see how many of the suggestions below you can incorporate!
 
