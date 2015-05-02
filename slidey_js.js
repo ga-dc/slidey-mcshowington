@@ -3,6 +3,7 @@ $(document).ready(function(){
 	var input = $("#word");
 	var form = $("#user-choice");
 	var changing = true;
+	var timeOut;
 
 	form.on("submit", function(event){
 		event.preventDefault();
@@ -27,7 +28,7 @@ $(document).ready(function(){
 		});
 		background.fadeIn();
 		if(changing = true){
-			setTimeout(function(){
+			timeOut = setTimeout(function(){
 				background.fadeOut();
 			}, 2500)
 		}
@@ -44,15 +45,24 @@ $(document).ready(function(){
     function pause(){
     	if(changing){
     		clearInterval(cyclePics);
+    		clearTimeout(timeOut);
+    		$("#background").stop();
+    		$("#background").css({
+    			"opacity": "1",
+    			"display": "block"
+    		});
     		console.log(cyclePics);
     		console.log("working!");
     		changing = false
     	}
     	else {
-    		changeBackground();
-    		cyclePics = setInterval(changeBackground, 3000);
-    		console.log("not working!");
-    		changing = true;
+    		background.fadeOut();
+    		setTimeout(function(){
+	    		changeBackground();
+	    		cyclePics = setInterval(changeBackground, 3000);
+	    		console.log("not working!");
+	    		changing = true;
+			}, 500)
     	}
     }
 
