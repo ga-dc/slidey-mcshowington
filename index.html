@@ -12,7 +12,7 @@
         box-sizing:border-box;
         font-family:"Josefin Sans", sans;
       }
-      html, body, #background 
+      html, body, #background
       {
         position:absolute;
         width:100%;
@@ -29,7 +29,7 @@
       {
         position:absolute;
         width:100%;
-        bottom:1em;
+        top:15em;
       }
       input
       {
@@ -58,6 +58,30 @@
       {
         width:72px;
       }
+      div#rhyming {
+        background-color: transparent;
+        color: white;
+        opacity: 0.1;
+        text-align: center;
+        margin: 0 auto;
+        position: relative;
+        font-size: 22px;
+        width:75%;
+        padding:.5em;
+        top: 15em;
+        transition: background-color .1s, opacity .2s;
+        border-radius:30px;
+        border-color:white;
+        border-width:2px;
+        border-style:solid;
+        visibility: hidden;
+      }
+      div#rhyming:hover,
+      div#rhyming:focus{
+        outline:0;
+        background-color:rgba(255,255,255,0.3);
+        opacity:.7;
+      }
     </style>
     <script src="jquery.js"></script>
     <script src="slidey_js.js"></script>
@@ -68,6 +92,9 @@
 
     <div id="inputs">
       <input type="text" id="word" value="nature" />
+    </div>
+    <div id="rhyming">
+      
     </div>
 
   </body>
